@@ -1,4 +1,4 @@
-# retrieval_controlled_comparison_1382a656
+# knowledge_base_freshness_ab_comparison
 
 （自动驾驶场景）知识库的时效性维护的成立条件能否被写成可检验的阈值？用检索与排序质量区分「还能用」与「已经不可信」。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python retrieval_controlled_comparison_1382a656.py --help
-python retrieval_controlled_comparison_1382a656.py --input sample.txt
-python retrieval_controlled_comparison_1382a656.py --input sample.txt --json
+python knowledge_base_freshness_ab_comparison.py --help
+python knowledge_base_freshness_ab_comparison.py --input sample.txt
+python knowledge_base_freshness_ab_comparison.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「对照实验」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python retrieval_controlled_comparison_1382a656.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python retrieval_controlled_comparison_1382a656.py --input sample.txt --json`；
+2. 运行 `python knowledge_base_freshness_ab_comparison.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
